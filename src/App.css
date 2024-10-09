@@ -1,104 +1,29 @@
-/* Общие стили для всего приложения */
-.app-container {
-  display: flex;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-}
-
-/* Левая колонка - календарь */
-.calendar-section {
-  width: 70%;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-right: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.calendar-section h2 {
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #333;
-}
-
 .calendar {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  height: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-th {
-  background-color: #f1f1f1;
-  font-weight: bold;
-}
-
-td {
-  height: 50px;
-}
-
-.event {
-  background-color: #0078d4;
-  color: white;
-  border-radius: 3px;
-}
-
-/* Правая колонка - надстройка */
-.addon-section {
-  width: 30%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.addon-section h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Кнопки действия */
-.action-button {
-  display: block;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background-color: #0078d4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.action-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* Тело письма */
-.email-body {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  min-height: 150px;
-}
-
-.email-body h3 {
-  margin-top: 0;
-}
-
-.email-body p {
-  margin: 0;
-  white-space: pre-wrap;
-}
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    height: 100%; /* Убедитесь, что календарь заполняет всю высоту */
+    overflow-y: auto; /* Добавьте прокрутку, если контент превышает высоту */
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar-table th {
+    background-color: #0078d4;
+    color: white;
+  }
+  
+  .event {
+    background-color: #e0f7fa; /* Цвет для событий */
+  }
+  
